@@ -15,6 +15,7 @@ export default function App() {
         const response = await axios.get(
           "https://jobadvisor.darpanchandigarh.in/wp-json/wp/v2/vendingdata"
         );
+        console.log("data stored");
         setData(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -27,7 +28,7 @@ export default function App() {
     <div>
       {/* <Navbar /> */}
       <FrontMain data={data} />
-      hello world
+
       {/* <VideoURLPage data={data} /> */}
       {/* <MiddlePartOfMain data={data} /> */}
       {/* <MainProductCarousel /> 
