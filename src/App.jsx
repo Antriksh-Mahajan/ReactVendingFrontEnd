@@ -26,11 +26,11 @@ export default function App() {
   return (
     <div>
       {/* <Navbar /> */}
-      <FrontMain data={data} />
+      {/* <FrontMain data={data} />
       <VideoURLPage data={data} />
       <MiddlePartOfMain data={data} />
       {/* <MainProductCarousel /> */}
-      <VideoImg data={data} />
+      {/* <VideoImg data={data} /> */}
     </div>
   );
 }
