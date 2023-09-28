@@ -27,6 +27,7 @@ export default function App() {
     <div>
       {/* <Navbar /> */}
       <FrontMain data={data} />
+      hello world
       {/* <VideoURLPage data={data} /> */}
       {/* <MiddlePartOfMain data={data} /> */}
       {/* <MainProductCarousel /> 
