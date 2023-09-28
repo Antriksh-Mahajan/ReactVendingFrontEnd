@@ -26,7 +26,7 @@ export default function App() {
 
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <FrontMain data={data} />
 
       {/* <VideoURLPage data={data} /> */}
