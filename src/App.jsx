@@ -26,10 +26,10 @@ export default function App() {
   return (
     <div>
       {/* <Navbar /> */}
-      {/* <FrontMain data={data} />
-      <VideoURLPage data={data} />
-      <MiddlePartOfMain data={data} />
-      {/* <MainProductCarousel /> */}
+      <FrontMain data={data} />
+      {/* <VideoURLPage data={data} /> */}
+      {/* <MiddlePartOfMain data={data} /> */}
+      {/* <MainProductCarousel /> 
       {/* <VideoImg data={data} /> */}
     </div>
   );
