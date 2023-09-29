@@ -54,7 +54,8 @@ export default function FrontMain({ data }) {
                       className="w-16 mx-5"
                       src={data.acf.firststicker}
                       alt="firststicker"
-                      width={100}
+                      width="64px"
+                      height="64px"
                     />
                     <h3 className="text-white px-5 text-center">
                       {data.acf.firststicekertext}
@@ -66,7 +67,8 @@ export default function FrontMain({ data }) {
                       className="w-16 mx-5"
                       src={data.acf.secondimg}
                       alt="secondsticker"
-                      width={100}
+                      width="64px"
+                      height="64px"
                     />
                     <h3 className="text-white px-5 ">
                       {data.acf.secondstickertext}
@@ -77,8 +79,9 @@ export default function FrontMain({ data }) {
                     <img
                       className="w-16 mx-5"
                       src={data.acf.thirdimg}
-                      alt="secondsticker"
-                      width={100}
+                      alt="thirdsticker"
+                      width="64px"
+                      height="64px"
                     />
                     <h3 className="text-white px-5 ">
                       {data.acf.thirdstickertext}
@@ -100,6 +103,8 @@ export default function FrontMain({ data }) {
                       src={data.acf.carouselimg1}
                       alt="Description for Carousel Image 1"
                       preload="auto"
+                      width="310px"
+                      height="440px"
                     />
                   </div>
                   <div>
@@ -107,6 +112,8 @@ export default function FrontMain({ data }) {
                       src={data.acf.carouselimg2}
                       alt="Description for Carousel Image 2"
                       preload="auto"
+                      width="310px"
+                      height="440px"
                     />
                   </div>
                   <div>
@@ -114,6 +121,8 @@ export default function FrontMain({ data }) {
                       src={data.acf.carouselimg3}
                       alt="Description for Carousel Image 3"
                       preload="auto"
+                      width="310px"
+                      height="440px"
                     />
                   </div>
                 </Carousel>
