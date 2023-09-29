@@ -6,7 +6,9 @@ import MiddlePartOfMain from "./Components/MiddlePartOfMain";
 import Navbar from "./Components/Navbar";
 import MainProductCarousel from "./Components/MainProductCarousel";
 // import MainProductCarousel from "./Components/MainProductCarousel";
-// import VideoImg from "./Components/VideoImg";
+import VideoImg from "./Components/VideoImg";
+import Blog from "./Components/Blog";
+import Footer from "./Components/Footer";
 
 export default function App() {
   const [data, setData] = useState([]);
@@ -32,6 +34,9 @@ export default function App() {
       <VideoURLPage data={data} />
       <MiddlePartOfMain data={data} />
       {/* <MainProductCarousel /> */}
+      <VideoImg data={data} />
+      <Blog data={data} />
+      <Footer />
     </div>
   );
 }
