@@ -90,7 +90,7 @@ export default function FrontMain({ data }) {
             <div className="pt-10">
               <section className="mx-10 lg:mx-20 md:auto carousel-section md:w-52 lg:w-56">
                 <Carousel
-                  autoPlay={true}
+                  autoPlay={false}
                   interval={3000}
                   infiniteLoop={true}
                   showThumbs={false}
@@ -99,8 +99,6 @@ export default function FrontMain({ data }) {
                     <img
                       src={data.acf.carouselimg1}
                       alt="Description for Carousel Image 1"
-                      width="800"
-                      height="600"
                       preload="auto"
                     />
                   </div>
@@ -108,8 +106,6 @@ export default function FrontMain({ data }) {
                     <img
                       src={data.acf.carouselimg2}
                       alt="Description for Carousel Image 2"
-                      width="800"
-                      height="600"
                       preload="auto"
                     />
                   </div>
@@ -117,8 +113,6 @@ export default function FrontMain({ data }) {
                     <img
                       src={data.acf.carouselimg3}
                       alt="Description for Carousel Image 3"
-                      width="800"
-                      height="600"
                       preload="auto"
                     />
                   </div>
