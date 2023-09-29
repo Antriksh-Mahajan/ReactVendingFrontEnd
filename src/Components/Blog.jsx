@@ -16,7 +16,7 @@ export default function Blog({ data }) {
                 />
               </div>
 
-              <div className="flex lg:flex-row px-5 items-center justify-center">
+              <div className="flex lg:flex-row items-center justify-center">
                 <div className="pt-5 flex flex-col mx-2">
                   <img
                     className="w-28 lg:w-36"
