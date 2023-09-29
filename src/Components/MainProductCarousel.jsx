@@ -51,6 +51,7 @@ const HorizontalCarousel = () => {
                 src="https://mlnnx0p1ut8l.i.optimole.com/cb:g6-f.55611/w:auto/h:auto/q:mauto/ig:avif/https://www.vending.com/wp-content/uploads/2023/07/ab32category-1.png"
                 alt=""
               />
+
               <h3>Snack Vending Machines</h3>
               <p>
                 Whether your break area serves 15 or 500, we have the right
