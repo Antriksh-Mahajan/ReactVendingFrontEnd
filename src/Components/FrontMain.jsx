@@ -89,13 +89,13 @@ export default function FrontMain({ data }) {
                   showThumbs={false}
                 >
                   <div>
-                    <img src={data.acf.carouselimg1} alt="" />
+                    <img src={data.acf.carouselimg1} alt="" preload="auto" />
                   </div>
                   <div>
-                    <img src={data.acf.carouselimg2} alt="" />
+                    <img src={data.acf.carouselimg2} alt="" preload="auto" />
                   </div>
                   <div>
-                    <img src={data.acf.carouselimg3} alt="" />
+                    <img src={data.acf.carouselimg3} alt="" preload="auto" />
                   </div>
                 </Carousel>
               </section>

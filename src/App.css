@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 } */
+.carousel-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel {
+  flex: 0 0 auto;
+  margin-right: 20px; /* Adjust this margin to control the spacing between carousels */
+  scroll-snap-align: start;
+}

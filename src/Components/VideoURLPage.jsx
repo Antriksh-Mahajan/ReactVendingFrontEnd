@@ -14,6 +14,7 @@ export default function VideoURLPage({ data }) {
             frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
+            // title="main video"
           />
         ))}
       </section>
