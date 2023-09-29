@@ -31,7 +31,7 @@ export default function App() {
       <FrontMain data={data} />
       <VideoURLPage data={data} />
       <MiddlePartOfMain data={data} />
-      <MainProductCarousel />
+      {/* <MainProductCarousel /> */}
     </div>
   );
 }

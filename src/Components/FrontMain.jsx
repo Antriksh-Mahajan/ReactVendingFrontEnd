@@ -53,7 +53,8 @@ export default function FrontMain({ data }) {
                     <img
                       className="w-16 mx-5"
                       src={data.acf.firststicker}
-                      alt=""
+                      alt="firststicker"
+                      width={100}
                     />
                     <h3 className="text-white px-5 text-center">
                       {data.acf.firststicekertext}
@@ -64,7 +65,8 @@ export default function FrontMain({ data }) {
                     <img
                       className="w-16 mx-5"
                       src={data.acf.secondimg}
-                      alt=""
+                      alt="secondsticker"
+                      width={100}
                     />
                     <h3 className="text-white px-5 ">
                       {data.acf.secondstickertext}
@@ -72,7 +74,12 @@ export default function FrontMain({ data }) {
                   </div>
 
                   <div className="flex flex-col items-center">
-                    <img className="w-16 mx-5" src={data.acf.thirdimg} alt="" />
+                    <img
+                      className="w-16 mx-5"
+                      src={data.acf.thirdimg}
+                      alt="secondsticker"
+                      width={100}
+                    />
                     <h3 className="text-white px-5 ">
                       {data.acf.thirdstickertext}
                     </h3>
@@ -89,13 +96,25 @@ export default function FrontMain({ data }) {
                   showThumbs={false}
                 >
                   <div>
-                    <img src={data.acf.carouselimg1} alt="" preload="auto" />
+                    <img
+                      src={data.acf.carouselimg1}
+                      alt="mainCarouselimg1"
+                      width={100}
+                    />
                   </div>
                   <div>
-                    <img src={data.acf.carouselimg2} alt="" preload="auto" />
+                    <img
+                      src={data.acf.carouselimg2}
+                      alt="mainCarouselimg2"
+                      width={300}
+                    />
                   </div>
                   <div>
-                    <img src={data.acf.carouselimg3} alt="" preload="auto" />
+                    <img
+                      src={data.acf.carouselimg3}
+                      alt="mainCarouselimg3"
+                      width={100}
+                    />
                   </div>
                 </Carousel>
               </section>

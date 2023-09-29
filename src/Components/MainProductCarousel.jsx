@@ -35,6 +35,7 @@ const HorizontalCarousel = () => {
                 src="https://mlnnx0p1ut8l.i.optimole.com/cb:g6-f.55611/w:auto/h:auto/q:mauto/ig:avif/https://www.vending.com/wp-content/uploads/2023/07/expresscombocategory-1-1.png"
                 alt=""
               />
+
               <h3>Combo Vending Machines</h3>
               <p>
                 Chips, candy, pastries, gum and mints, soda, juices, bottled
@@ -42,6 +43,7 @@ const HorizontalCarousel = () => {
                 combo vending machines.”
               </p>
             </div>
+
             <div style={{ flex: "100%" }}>
               {/* Content for the right half */}
               <img

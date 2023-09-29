@@ -18,16 +18,17 @@ export default function Header() {
           <img
             src="https://mlnnx0p1ut8l.i.optimole.com/cb:g6-f.55611/w:auto/h:auto/q:mauto/ig:avif/https://www.vending.com/wp-content/uploads/2021/10/vending-logo-dark.svg"
             alt="SiteLogo"
-            className="w-36 lg:w-72"
+            width={300}
           />
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
-              className="bg-transparent px-3 py-1 rounded-full w-12"
+              className="bg-blue-200 px-3 py-1 rounded-full w-12"
             >
               <img
                 src="https://assets.stickpng.com/images/588a6507d06f6719692a2d15.png"
                 alt=""
+                width={100}
               />
             </button>
           </div>
