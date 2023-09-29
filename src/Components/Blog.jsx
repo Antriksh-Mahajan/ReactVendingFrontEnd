@@ -10,7 +10,7 @@ export default function Blog({ data }) {
             <div className="w-full flex flex-col items-center justify-center text-center">
               <div className="flex flex-row">
                 <img
-                  className="w-100 max-w-full" // Added max-w-full to ensure the image fits the screen
+                  className="w-100 " // Added max-w-full to ensure the image fits the screen
                   src={dataItem.acf.mainbottleimage}
                   alt=""
                 />
