@@ -98,22 +98,28 @@ export default function FrontMain({ data }) {
                   <div>
                     <img
                       src={data.acf.carouselimg1}
-                      alt="mainCarouselimg1"
-                      width={100}
+                      alt="Job Advisor Website Screenshot"
+                      width="800"
+                      height="600"
+                      preload="auto"
                     />
                   </div>
                   <div>
                     <img
                       src={data.acf.carouselimg2}
                       alt="mainCarouselimg2"
-                      width={300}
+                      width="800"
+                      height="600"
+                      preload="auto"
                     />
                   </div>
                   <div>
                     <img
                       src={data.acf.carouselimg3}
                       alt="mainCarouselimg3"
-                      width={100}
+                      width="800"
+                      height="600"
+                      preload="auto"
                     />
                   </div>
                 </Carousel>
