@@ -1,69 +1,67 @@
-import React from "react";
+import ReadMore from "./ReadMore";
 
 export default function Blog({ data }) {
   return (
-    <div className="w-full mt-10 ">
-      {data.map((dataItem) => (
-        <div key={dataItem.id} className="flex flex-col lg:flex-row">
-          {/* Left Section */}
-          <div className="w-full lg:w-1/2">
-            <div className="w-full flex flex-col items-center justify-center text-center">
-              <div className="flex flex-row">
-                <img
-                  className="w-100 " // Added max-w-full to ensure the image fits the screen
-                  src={dataItem.acf.mainbottleimage}
-                  alt=""
-                />
-              </div>
+    <div className="flex flex-col lg:flex-row  w-full  lg:px-96  items-center justify-center">
+      {data.map((data) => (
+        <div key={data.id}>
+          {/* leftSideMain */}
+          <div className="mt-16 ">
+            {/* bottleimage */}
+            <img src={data.acf.mainbottleimage} alt="" />
+            {/* bottleimage */}
+          </div>
 
-              <div className="flex lg:flex-row items-center justify-center">
-                <div className="pt-5 flex flex-col mx-2">
-                  <img
-                    className="w-28 lg:w-36"
-                    src={dataItem.acf.bottleleftimg}
-                    alt=""
-                  />
-                  <span className="w-28 lg:w-36 font-bold">
-                    {dataItem.acf.uvend_technology}
-                  </span>
-                </div>
-                <div className="w-28 pt-5 flex flex-col mx-2">
-                  <img
-                    className="w-28 lg:w-36"
-                    src={dataItem.acf.bottlemidimg}
-                    alt=""
-                  />
-                  <span className="w-28 py-2 lg:w-40 font-bold">
-                    {dataItem.acf.manufactured_usa}
-                  </span>
-                </div>
-                <div className="pt-11 flex flex-col mx-2">
-                  <img
-                    className="w-28 lg:w-36"
-                    src={dataItem.acf.bottlerightimg}
-                    alt=""
-                  />
-                  <span className="w-28 lg:w-36 font-bold">
-                    {dataItem.acf.ivend_guaranteed_delivery}
-                  </span>
-                </div>
-              </div>
+          <div className="flex flex-row m-5 justify-center items-center">
+            {/* first */}
+            <div className="mx-3 text-center ">
+              <img className="" src={data.acf.bottleleftimg} alt="" />
+              <h1 className="mt-2 font-bold">{data.acf.uvend_technology}</h1>
             </div>
+            {/* first */}
+
+            {/* second */}
+            <div className="mx-3 text-center  ">
+              <img className="w-40" src={data.acf.bottlemidimg} alt="" />
+              <h1 className="mt-2 font-bold">{data.acf.manufactured_usa}</h1>
+            </div>
+            {/* second */}
+
+            {/* third */}
+            <div className="mx-3 text-center ">
+              <img className="w-36" src={data.acf.bottlerightimg} alt="" />
+              <h1 className="mt-2 font-bold w-full">
+                {data.acf.ivend_guaranteed_delivery}
+              </h1>
+            </div>
+            {/* third */}
           </div>
 
-          {/* Right Section */}
-
-          <div className=" lg:w-1/2  ">
-            <h1 className="font-bold text-4xl lg:w-1/2 pt-10  m-6">
-              {dataItem.acf.blogtitle}
-            </h1>
-            <p className="lg:w-2/3 text-justify m-6">{dataItem.acf.blogbody}</p>
-            <a href="" className="pt-5 font-bold  items-center justify-center">
-              {dataItem.acf.readmorebtn}
-            </a>
-          </div>
+          {/* leftSideMainEnd */}
         </div>
       ))}
+      <div className="w-1/2 m-10">
+        {/* RightSideMain */}
+        <h1 className="font-bold text-4xl my-5 ">
+          Your one-stop source for vending machines!
+        </h1>
+        <p className="py-3 text-justify">
+          Vending.com is the “factory direct supplier” of a full line of new and
+          factory “Certified” re-manufactured combo, snack, and cold drink,
+          coffee, cold and frozen food and custom vending machines manufactured
+          in the U.S.A. Whether you are starting your own vending machine
+          business or you would like to provide your customers and employees
+          vending services, Vending.com’s combo, snack, and drink vending
+          machines are a perfect solution! With our over 90 years of experience,
+          we can provide for your vending needs. With our over 90 years of
+          experience, we can provide for your vending needs. No need to “pay
+          cash” for your equipment. Up to 100% financing can be provided by our
+          company. Check out our short video to see why Vending.com is the #1
+          choice for profitable vending!
+        </p>
+        <ReadMore />
+        {/* RightSideMain */}
+      </div>
     </div>
   );
 }

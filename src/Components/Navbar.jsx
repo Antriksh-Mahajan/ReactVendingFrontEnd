@@ -20,10 +20,10 @@ export default function Header() {
             alt="SiteLogo"
             width={300}
           />
-          <div className="lg:hidden">
+          <div className="lg:hidden flex items-center justify-end">
             <button
               onClick={toggleMenu}
-              className="bg-blue-200 px-3 py-1 rounded-full w-12"
+              className="px-3 py-1 rounded-full w-12"
             >
               <img
                 src="https://assets.stickpng.com/images/588a6507d06f6719692a2d15.png"

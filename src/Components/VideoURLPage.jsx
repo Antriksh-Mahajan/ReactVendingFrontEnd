@@ -10,7 +10,7 @@ export default function VideoURLPage({ data }) {
             className="w-full pt-5 flex flex-row "
             src={data.acf.videolink}
             width="100%"
-            height="360"
+            height="400"
             frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen

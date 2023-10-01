@@ -9,6 +9,10 @@ import MainProductCarousel from "./Components/MainProductCarousel";
 import VideoImg from "./Components/VideoImg";
 import Blog from "./Components/Blog";
 import Footer from "./Components/Footer";
+import FinancialAdvisor from "./Components/FinancialAdvisor";
+import AskedQuestions from "./Components/AskedQuestions";
+import EndHomePage from "./Components/EndHomePage";
+import ReadMore from "./Components/ReadMore";
 
 export default function App() {
   const [data, setData] = useState([]);
@@ -27,6 +31,7 @@ export default function App() {
     fetchData();
   }, []);
 
+  <ReadMore data={data} />;
   return (
     <div>
       <Navbar />
@@ -36,6 +41,10 @@ export default function App() {
       {/* <MainProductCarousel /> */}
       <VideoImg data={data} />
       <Blog data={data} />
+      <FinancialAdvisor />
+      <AskedQuestions />
+      {/* <EndHomePage /> */}
+
       <Footer />
     </div>
   );
