@@ -5,7 +5,7 @@ export default function MiddlePartOfMain({ data }) {
   return (
     <div>
       {data.map((data) => (
-        <div className="w-full flex justify-center items-center p-6  md:flex-col ">
+        <div className="w-full flex flex-row justify-center items-center p-6  ">
           <div className="px-4  flex flex-col md:pt-5 ">
             <h2 className="text-black md:w-72 font-bold text-xl font-romen">
               {data.acf.middleleft}

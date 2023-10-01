@@ -5,10 +5,10 @@ export default function EndHomePage() {
     <div>
       <div
         style={{ backgroundColor: "#F5F5F5" }}
-        className="flex flex-row w-full px-96 items-center justify-center"
+        className="flex flex-col md:flex-row lg:flex-row w-full lg:px-96 items-center justify-center text-left "
       >
         {/* leftSide */}
-        <div className="w-1/2 h-100">
+        <div className="w-full lg:w-1/2 lg:h-100">
           <h1 className="text-4xl w-100 font-bold pb-5 ">
             Vending.com uses award winning technology
           </h1>

@@ -41,9 +41,9 @@ export default function App() {
       {/* <MainProductCarousel /> */}
       <VideoImg data={data} />
       <Blog data={data} />
-      <FinancialAdvisor />
-      <AskedQuestions />
-      {/* <EndHomePage /> */}
+      <FinancialAdvisor data={data} />
+      <AskedQuestions data={data} />
+      <EndHomePage />
 
       <Footer />
     </div>
