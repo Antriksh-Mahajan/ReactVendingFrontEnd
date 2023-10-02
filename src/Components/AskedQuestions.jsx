@@ -17,7 +17,11 @@ export default function AskedQuestions({ data }) {
     <div className="flex flex-col lg:flex-row w-full lg:px-96 items-center justify-center">
       <div className="w-80">
         {data.map((i) => (
-          <img className="w-80" src={i.acf.askedquestionsleftimg} alt="" />
+          <img
+            className="w-80"
+            src={i.acf.askedquestionsleftimg}
+            alt="image change"
+          />
         ))}
       </div>
       <div className="p-10">
