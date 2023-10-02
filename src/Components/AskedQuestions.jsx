@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function AskedQuestions() {
+export default function AskedQuestions({ data }) {
   const [expandedIndex, setExpandedIndex] = useState(-1);
 
   const toggleExpansion = (index) => {
@@ -14,19 +14,16 @@ export default function AskedQuestions() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row w-full  lg:px-96 items-center  justify-center">
-      <div className="w-80  ">
-        <img
-          className="w-80"
-          src="https://mlnnx0p1ut8l.i.optimole.com/cb:g6-f.55611/w:auto/h:auto/q:mauto/ig:avif/https://www.vending.com/wp-content/uploads/2021/10/joyfull-man.png"
-          alt=""
-        />
+    <div className="flex flex-col lg:flex-row w-full lg:px-96 items-center justify-center">
+      <div className="w-80">
+        {data.map((i) => (
+          <img className="w-80" src={i.acf.askedquestionsleftimg} alt="" />
+        ))}
       </div>
       <div className="p-10">
         <h1 className="font-semibold text-4xl py-10 ">
           Frequently Asked Questions
         </h1>
-
         {[
           "Is there any cost for credit card reader installation?",
           "Can I get 100% financing?",
