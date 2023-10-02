@@ -36,14 +36,14 @@ export default function App() {
     <div>
       <Navbar />
       <FrontMain data={data} />
-      <VideoURLPage data={data} />
+      {/* <VideoURLPage data={data} /> */}
       <MiddlePartOfMain data={data} />
-      {/* <MainProductCarousel /> */}
+
       <VideoImg data={data} />
       <Blog data={data} />
       <FinancialAdvisor data={data} />
       <AskedQuestions data={data} />
-      {/* <EndHomePage /> */}
+      <EndHomePage />
 
       <Footer />
     </div>
