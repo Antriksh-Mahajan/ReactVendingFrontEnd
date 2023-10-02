@@ -36,10 +36,7 @@ export default function EndHomePage() {
         {/*  */}
         {/* RightSide */}
         <div className="w-1/2 ">
-          <img
-            src="https://www.vending.com/wp-content/uploads/2021/11/Untitled-2.png"
-            alt=""
-          />
+          <img src="" alt="" />
         </div>
         {/* RightSide */}
       </div>
