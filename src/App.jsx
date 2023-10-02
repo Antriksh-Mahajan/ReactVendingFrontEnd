@@ -43,7 +43,7 @@ export default function App() {
       <Blog data={data} />
       <FinancialAdvisor data={data} />
       <AskedQuestions data={data} />
-      <EndHomePage />
+      {/* <EndHomePage /> */}
 
       <Footer />
     </div>
