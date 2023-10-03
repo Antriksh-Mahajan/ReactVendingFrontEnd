@@ -15,6 +15,7 @@ export default function VideoImg({ data }) {
                   class="w-full h-auto brightness-50"
                   style={{ objectFit: "cover", width: "100%", height: "500px" }}
                 />
+                {""}{" "}
               </a>
             </div>
 

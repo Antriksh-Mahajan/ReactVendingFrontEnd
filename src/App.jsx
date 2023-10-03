@@ -19,6 +19,7 @@ import ContactUs from "./Components/ContactUs";
 
 export default function App() {
   const [data, setData] = useState([]);
+  const [img, setImg] = useState([]);
   useEffect(() => {
     async function fetchData() {
       try {
@@ -45,7 +46,7 @@ export default function App() {
       <VideoImg data={data} />
       <Blog data={data} />
       <FinancialAdvisor data={data} />
-      {/* <SliderWithText data={data} /> */}
+      <SliderWithText data={data} />
 
       <AskedQuestions data={data} />
       <EndHomePage data={data} />
