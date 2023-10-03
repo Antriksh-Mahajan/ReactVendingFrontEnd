@@ -11,21 +11,21 @@ export default function SliderWithText() {
       description:
         "Chips, candy, pastries, gum and mints, soda, juices, bottled water, and even dairy products can be made available through combo vending machines",
       imageUrl:
-        "https://mlnnx0p1ut8l.i.optimole.com/cb:g6-f.55611/w:auto/h:auto/q:mauto/ig:avif/https://www.vending.com/wp-content/uploads/2023/07/expresscombocategory-1-1.png",
+        "https://mlnnx0p1sut8l.i.optimole.com/cb:g6-f.55611/w:auto/h:auto/q:mauto/ig:avif/https://www.vending.com/wp-content/uploads/2023/07/expresscombocategory-1-1.png",
     },
     {
       title: "Snack Vending Machines",
       description:
         "A variety of snacks including chips, chocolates, and candies can be vended through snack vending machines",
       imageUrl:
-        "https://mlnnx0p1ut8l.i.optimole.com/cb:g6-f.55611/w:auto/h:auto/q:mauto/ig:avif/https://www.vending.com/wp-content/uploads/2023/07/ab32category-1.png",
+        "https://mlnnx0p1ust8l.i.optimole.com/cb:g6-f.55611/w:auto/h:auto/q:mauto/ig:avif/https://www.vending.com/wp-content/uploads/2023/07/ab32category-1.png",
     },
     {
       title: "Drink Vending Machines",
       description:
         "Soda, juices, and bottled water can be easily dispensed through drink vending machines",
       imageUrl:
-        "https://mlnnx0p1ut8l.i.optimole.com/cb:g6-f.55611/w:auto/h:auto/q:mauto/ig:avif/https://www.vending.com/wp-content/uploads/2023/07/ab10-500-2-1-1-1.png",
+        "https://mlnnx0sp1ut8l.i.optimole.com/cb:g6-f.55611/w:auto/h:auto/q:mauto/ig:avif/https://www.vending.com/wp-content/uploads/2023/07/ab10-500-2-1-1-1.png",
     },
     // Add more items here...
   ];
