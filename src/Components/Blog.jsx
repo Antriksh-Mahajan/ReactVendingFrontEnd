@@ -6,7 +6,7 @@ export default function Blog({ data }) {
       {data.map((data) => (
         <div className="flex flex-row" key={data.id}>
           {/* leftSideMain */}
-          <div className="flex flex-row">
+          <div className="flex flex-col lg:flex-row">
             <div className=" flex flex-col">
               <div className="mt-16 ">
                 {/* bottleimage */}
