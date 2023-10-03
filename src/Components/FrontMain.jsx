@@ -19,22 +19,9 @@ export default function FrontMain({ data }) {
                 </h1>
 
                 <h3 className="lg:w-full text-white text-4xl md:w-full font-bold mx-4 lg:mx-auto">
-                  <h1 className="lg:w-full text-white text-4xl md:w-full font-bold md:p-4">
-                    {data.acf.maintagline
-                      .split("factory direct")
-                      .map((part, index, array) =>
-                        index === array.length - 1 ? (
-                          part
-                        ) : (
-                          <span key={index}>
-                            {part}{" "}
-                            <span className="factory-direct text-greencolor">
-                              factory direct
-                            </span>
-                          </span>
-                        )
-                      )}
-                  </h1>
+                  Your Smart,{" "}
+                  <span className="text-greencolor">factory direct</span>{" "}
+                  Vending Machine Supplier.
                 </h3>
 
                 <p className=" lg:w-full text-white p-5">
