@@ -1,45 +1,26 @@
 import React from "react";
 
-export default function EndHomePage() {
+export default function EndHomePage({ data }) {
   return (
     <div>
-      <div
-        style={{ backgroundColor: "#F5F5F5" }}
-        className="flex flex-col md:flex-row lg:flex-row w-full lg:px-96 items-center justify-center text-left "
-      >
-        {/* leftSide */}
-        <div className="w-full lg:w-1/2 lg:h-100">
-          <h1 className="text-4xl w-100 font-bold pb-5 ">
-            Vending.com uses award winning technology
-          </h1>
-          <p>
-            Based in Des Moines, lowa. Vending.com offers factory direct
-            warranties, parts and service, financing and so much more. Our full
-            service programs help the first time owner-operator just getting
-            started in the vending business or the seasoned vendor-operator
-            looking to expand a growing business.
-          </p>
-          <p>
-            Vending.com is your answer to all your vending needs. Let our 90
-            plus years of experience work for you to help grow your business.
-            Machine selections include anything from snacks & soda vending
-            machines to a full food vending system.
-            <br />
-          </p>
-          <p>
-            We have reliable resources to give you the ultimate vending
-            experience. Become part of the rapidly growing vending industry with
-            Vending.com.
-          </p>
+      {data.map((data) => (
+        <div
+          style={{ backgroundColor: "#F5F5F5" }}
+          className="flex flex-row w-full lg:px-96 items-center justify-center text-left"
+        >
+          <div className="w-1/2 lg:w-1/2 lg:h-100">
+            <h1 className="text-4xl w-100 font-bold pb-5 m-5 ">
+              {data.acf.endsectiontitle}
+            </h1>
+            <div>
+              <p className="m-5 text-justify">{data.acf.endsectionbody}</p>
+            </div>
+          </div>
+          <div className="hidden md:block ">
+            <img src={data.acf.endsectionimg} alt="" />
+          </div>
         </div>
-        {/* leftSide */}
-        {/*  */}
-        {/* RightSide */}
-        <div className="w-1/2 ">
-          <img src="" alt="" />
-        </div>
-        {/* RightSide */}
-      </div>
+      ))}
     </div>
   );
 }

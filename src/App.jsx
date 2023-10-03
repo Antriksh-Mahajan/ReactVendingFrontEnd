@@ -13,6 +13,9 @@ import FinancialAdvisor from "./Components/FinancialAdvisor";
 import AskedQuestions from "./Components/AskedQuestions";
 import EndHomePage from "./Components/EndHomePage";
 import ReadMore from "./Components/ReadMore";
+import SliderWithText from "./SliderWithText";
+import PostAPI from "./Components/PostAPI";
+import ContactUs from "./Components/ContactUs";
 
 export default function App() {
   const [data, setData] = useState([]);
@@ -34,17 +37,20 @@ export default function App() {
   <ReadMore data={data} />;
   return (
     <div>
+      {/* <PostAPI /> */}
       <Navbar />
       <FrontMain data={data} />
       {/* <VideoURLPage data={data} /> */}
       <MiddlePartOfMain data={data} />
-
+      <MainProductCarousel />
       <VideoImg data={data} />
       <Blog data={data} />
       <FinancialAdvisor data={data} />
-      <AskedQuestions data={data} />
-      <EndHomePage />
+      <SliderWithText data={data} />
 
+      <AskedQuestions data={data} />
+      <EndHomePage data={data} />
+      <ContactUs />
       <Footer />
     </div>
   );

@@ -40,7 +40,7 @@ export default function Blog({ data }) {
           {/* leftSideMainEnd */}
         </div>
       ))}
-      <div className="w-1/2 m-10">
+      <div className="lg:w-1/2 m-10">
         {/* RightSideMain */}
         <h1 className="font-bold text-4xl my-5 ">
           Your one-stop source for vending machines!
