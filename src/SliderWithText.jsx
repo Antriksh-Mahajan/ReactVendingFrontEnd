@@ -36,43 +36,43 @@ export default function SliderWithText() {
 
   return (
     <div>
-      <div
-        style={{ backgroundColor: "#FAFBFC" }}
-        className="w-full flex flex-col lg:flex-row justify-center  items-center text-center"
-      >
-        <div className=" w-1/2 justify-center items-center ">
-          <ul>
-            <h1 className=" text-3xl  my-5">
-              Our Full-Line of Vending Machines
-            </h1>
-            {items.map((item, index) => (
-              <li
-                key={index}
-                className={selectedItem === index ? "selected" : ""}
-                onClick={() => handleItemClick(index)}
-              >
-                {item.title}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="flex flex-row justify-center items-center my-10">
+      <div className="flex flex-row justify-center items-center my-10">
+        <div
+          style={{ backgroundColor: "#FAFBFC" }}
+          className="w-1/2 flex flex-col lg:flex-row justify-center  items-center text-center "
+        >
+          <div className="  justify-center items-center my-10 mx-10">
+            <ul>
+              <h1 className=" text-3xl  my-5">
+                Our Full-Line of Vending Machines
+              </h1>
+              {items.map((item, index) => (
+                <li
+                  key={index}
+                  className={selectedItem === index ? "selected" : ""}
+                  onClick={() => handleItemClick(index)}
+                >
+                  {item.title}
+                </li>
+              ))}
+            </ul>
+          </div>
           <Carousel
             selectedItem={selectedItem}
             showThumbs={false}
             showArrows={true}
             infiniteLoop={true}
-            className=" w-1/2"
+            className=" w-1/2 justify-center flex   "
           >
             {items.map((item, index) => (
               <div
                 key={index}
                 className=" flex flex-col lg:flex-row justify-center items-center  "
               >
-                <div className=" mt-5  md:w-40 lg:w-40  ">
-                  <img className="" src={item.imageUrl} alt="" />
+                <div className=" mt-5     ">
+                  <img className="w-full" src={item.imageUrl} alt="" />
                 </div>
-                <div className=" text-center lg:flex lg:flex-col items-center justify-center">
+                <div className=" text-center lg:flex lg:flex-col items-center justify-center m-5">
                   <h2 className=" font-bold">{item.title}</h2>
                   <p className=" text-justify">{item.description}</p>
                   <button className="bg-greencolor mt-5 w-20 ">view now</button>
