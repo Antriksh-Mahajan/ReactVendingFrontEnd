@@ -42,11 +42,11 @@ export default function App() {
       <FrontMain data={data} />
       {/* <VideoURLPage data={data} /> */}
       <MiddlePartOfMain data={data} />
-      <MainProductCarousel />
+      {/* <MainProductCarousel /> */}
       <VideoImg data={data} />
       <Blog data={data} />
       <FinancialAdvisor data={data} />
-      <SliderWithText data={data} />
+      {/* <SliderWithText data={data} /> */}
 
       <AskedQuestions data={data} />
       <EndHomePage data={data} />
