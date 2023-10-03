@@ -17,7 +17,7 @@ export default function EndHomePage({ data }) {
             </div>
           </div>
           <div className="hidden  lg:block">
-            <img src={data.acf.endsectionimg} alt="" />
+            <img src={data.acf.endsectionimg} alt="" width={100} height={100} />
           </div>
         </div>
       ))}
