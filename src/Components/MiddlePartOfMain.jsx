@@ -11,7 +11,8 @@ export default function MiddlePartOfMain({ data }) {
               {data.acf.middleleft}
             </h2>
             <img
-              width="100px "
+              width="30% "
+              height="10px"
               className="py-3 "
               src={data.acf.fivestar}
               alt=""
@@ -28,22 +29,30 @@ export default function MiddlePartOfMain({ data }) {
                 className="w-24 mx-10 grayscale hover:grayscale-0"
                 src="https://mlnnx0p1ut8l.i.optimole.com/cb:g6-f.55611/w:auto/h:auto/q:mauto/ig:avif/https://www.vending.com/wp-content/uploads/2021/12/user-icon4-1.png"
                 alt=""
+                width="100%"
+                height="100px"
               />
 
               <img
                 className="w-24 mx-10  grayscale hover:grayscale-0"
                 src="https://mlnnx0p1ut8l.i.optimole.com/cb:g6-f.55611/w:auto/h:auto/q:mauto/ig:avif/https://www.vending.com/wp-content/uploads/2021/12/user-icon2-1.png"
                 alt=""
+                width="100%"
+                height="100px"
               />
               <img
                 className="w-24 mx-10 grayscale hover:grayscale-0"
                 src="https://mlnnx0p1ut8l.i.optimole.com/cb:g6-f.55611/w:auto/h:auto/q:mauto/ig:avif/https://www.vending.com/wp-content/uploads/2021/12/user-icon7-1.png"
                 alt=""
+                width="100%"
+                height="100px"
               />
               <img
                 className="w-24 mx-10 lg:mx-5 grayscale hover:grayscale-0"
                 src="https://mlnnx0p1ut8l.i.optimole.com/cb:g6-f.55611/w:auto/h:auto/q:mauto/ig:avif/https://www.vending.com/wp-content/uploads/2021/12/user-icon9-1.png"
                 alt=""
+                width="100%"
+                height="100px"
               />
             </div>
           </div>
