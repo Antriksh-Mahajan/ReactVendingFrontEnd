@@ -21,6 +21,8 @@ export default function AskedQuestions({ data }) {
             className="w-80"
             src={i.acf.askedquestionsleftimg}
             alt="image change"
+            width="100%"
+            height="200px"
           />
         ))}
       </div>

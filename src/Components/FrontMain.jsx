@@ -19,7 +19,7 @@ export default function FrontMain({ data }) {
                 </h1>
 
                 <h3 className="lg:w-full text-white text-4xl md:w-full font-bold mx-4 lg:mx-auto">
-                  <h3 className="lg:w-full text-white text-4xl md:w-full font-bold md:p-4">
+                  <h1 className="lg:w-full text-white text-4xl md:w-full font-bold md:p-4">
                     {data.acf.maintagline
                       .split("factory direct")
                       .map((part, index, array) =>
@@ -34,7 +34,7 @@ export default function FrontMain({ data }) {
                           </span>
                         )
                       )}
-                  </h3>
+                  </h1>
                 </h3>
 
                 <p className=" lg:w-full text-white p-5">

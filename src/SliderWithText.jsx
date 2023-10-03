@@ -70,7 +70,13 @@ export default function SliderWithText() {
                 className=" flex flex-col lg:flex-row justify-center items-center  "
               >
                 <div className=" mt-5     ">
-                  <img className="w-full" src={item.imageUrl} alt="" />
+                  <img
+                    className="w-full"
+                    src={item.imageUrl}
+                    alt=""
+                    width="100%"
+                    height="200px"
+                  />
                 </div>
                 <div className=" text-center lg:flex lg:flex-col items-center justify-center m-5">
                   <h2 className=" font-bold">{item.title}</h2>

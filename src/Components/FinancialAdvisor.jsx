@@ -17,6 +17,8 @@ export default function FinancialAdvisor({ data }) {
                 src={data.acf.financesectionleftimg}
                 alt=""
                 className="w-36 "
+                width="100%"
+                height="200px"
               />
 
               <h1 className="font-semibold text-4xl w-96 py-6 ">
@@ -33,6 +35,8 @@ export default function FinancialAdvisor({ data }) {
                 src={data.acf.financesectionlrightmg}
                 alt=""
                 className="w-36 "
+                width="100%"
+                height="200px"
               />
 
               <h1 className="font-semibold text-4xl w-96 py-6 ">
@@ -49,21 +53,36 @@ export default function FinancialAdvisor({ data }) {
 
             <div className="flex flex-col md:flex-row lg:flex-row justify-evenly  md:my-10  ">
               <div className="flex flex-col  items-center  m-2">
-                <img src={data.acf.dollar100finance} alt="" />
+                <img
+                  src={data.acf.dollar100finance}
+                  alt=""
+                  width="50%"
+                  height="200px"
+                />
                 <h2 className="m-2 font-bold">{data.acf.text100finance}</h2>
               </div>
               <div className="flex flex-col  items-center m-2 ">
-                <img src={data.acf.imgmade_in_usa} alt="" />
+                <img
+                  src={data.acf.imgmade_in_usa}
+                  alt=""
+                  width="50%"
+                  height="100px"
+                />
                 <h2 className="m-2 font-bold">{data.acf.usatext}</h2>
               </div>{" "}
               <div className="flex flex-col  items-center m-2 ">
-                <img src={data.acf.heartprofitableimg} alt="" />
+                <img
+                  src={data.acf.heartprofitableimg}
+                  alt=""
+                  width="25%"
+                  height="200px"
+                />
                 <h2 className="m-2 font-bold w-40 te">
                   {data.acf.profitable_text}
                 </h2>
               </div>{" "}
               <div className="flex flex-col  items-center m-2">
-                <img src={data.acf.tickimg} alt="" />
+                <img src={data.acf.tickimg} alt="" width="25%" height="100px" />
                 <h2 className="m-2 font-bold">{data.acf.ticktext}</h2>
               </div>
             </div>

@@ -10,13 +10,24 @@ export default function Blog({ data }) {
             <div className=" flex flex-col">
               <div className="mt-16 ">
                 {/* bottleimage */}
-                <img src={data.acf.mainbottleimage} alt="" />
+                <img
+                  src={data.acf.mainbottleimage}
+                  alt=""
+                  width="100%"
+                  height="400px"
+                />
                 {/* bottleimage */}
               </div>
               <div className="flex flex-row m-5 justify-center items-center">
                 {/* first */}
                 <div className="mx-3 text-center ">
-                  <img className="" src={data.acf.bottleleftimg} alt="" />
+                  <img
+                    className=""
+                    src={data.acf.bottleleftimg}
+                    alt=""
+                    width="100%"
+                    height="200px"
+                  />
                   <h1 className="mt-2 font-bold">
                     {data.acf.uvend_technology}
                   </h1>
@@ -24,7 +35,13 @@ export default function Blog({ data }) {
                 {/* first */}
                 {/* second */}
                 <div className="mx-3 text-center  ">
-                  <img className="w-40" src={data.acf.bottlemidimg} alt="" />
+                  <img
+                    className="w-40"
+                    src={data.acf.bottlemidimg}
+                    alt=""
+                    width="100%"
+                    height="200px"
+                  />
                   <h1 className="mt-2 font-bold">
                     {data.acf.manufactured_usa}
                   </h1>
@@ -32,7 +49,13 @@ export default function Blog({ data }) {
                 {/* second */}
                 {/* third */}
                 <div className="mx-3 text-center ">
-                  <img className="w-36" src={data.acf.bottlerightimg} alt="" />
+                  <img
+                    className="w-36"
+                    src={data.acf.bottlerightimg}
+                    alt=""
+                    width="100%"
+                    height="200px"
+                  />
                   <h1 className="mt-2 font-bold w-full">
                     {data.acf.ivend_guaranteed_delivery}
                   </h1>
