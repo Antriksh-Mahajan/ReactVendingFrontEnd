@@ -19,8 +19,8 @@ export default function FrontMain({ data }) {
                 </h1>
 
                 <h1 className="lg:w-full text-white text-4xl md:w-full font-bold mx-4 lg:mx-auto">
-                  Your Smart,{" "}
-                  <span className="text-greencolor">factory direct</span>{" "}
+                  Your Smart
+                  <span className="text-greencolor">factory direct</span>
                   Vending Machine Supplier.
                 </h1>
 
