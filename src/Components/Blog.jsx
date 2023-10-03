@@ -42,23 +42,8 @@ export default function Blog({ data }) {
       ))}
       <div className="lg:w-1/2 m-10">
         {/* RightSideMain */}
-        <h1 className="font-bold text-4xl my-5 ">
-          Your one-stop source for vending machines!
-        </h1>
-        <p className="py-3 text-justify">
-          Vending.com is the “factory direct supplier” of a full line of new and
-          factory “Certified” re-manufactured combo, snack, and cold drink,
-          coffee, cold and frozen food and custom vending machines manufactured
-          in the U.S.A. Whether you are starting your own vending machine
-          business or you would like to provide your customers and employees
-          vending services, Vending.com’s combo, snack, and drink vending
-          machines are a perfect solution! With our over 90 years of experience,
-          we can provide for your vending needs. With our over 90 years of
-          experience, we can provide for your vending needs. No need to “pay
-          cash” for your equipment. Up to 100% financing can be provided by our
-          company. Check out our short video to see why Vending.com is the #1
-          choice for profitable vending!
-        </p>
+        <h1 className="font-bold text-4xl my-5 ">{data.acf.blogtitle}</h1>
+        <p className="py-3 text-justify">{data.acf.blogbody}</p>
         <ReadMore />
         {/* RightSideMain */}
       </div>
