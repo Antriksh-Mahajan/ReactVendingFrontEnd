@@ -29,9 +29,9 @@ const LatestPostBlog = () => {
 
   return (
     <div className="mt-10 flex flex-col items-center justify-center lg:flex-row lg:px-4">
-      <div className="flex flex-col items-start justify-left">
+      <div className="lg:w-1/4 flex flex-col items-start justify-left">
         <h2 className="text-3xl font-bold">Latest Blogs</h2>
-        <div className="bg-blue-200">
+        <div className="">
           {latestPost && (
             <div className="flex flex-col">
               <div className="">
@@ -45,12 +45,12 @@ const LatestPostBlog = () => {
             </div>
           )}
         </div>
-        <div className="py-2 flex items-center justify-center flex-row lg:w-1/3">
-          <div className="flex  items-center w-full">
+        <div className="py-2 flex items-center justify-between text-center flex-row lg:w-2/4">
+          <div className="flex justify-between  items-center w-full">
             {otherPosts.length > 0 &&
               otherPosts.slice(1, 4).map((post, index) => (
                 <div
-                  className="flex flex-col w-full items-center justify-center my-4"
+                  className="flex flex-col w-full items-stretch justify-evenly  my-4"
                   key={post.index}
                 >
                   <div className="w-full">
@@ -64,7 +64,7 @@ const LatestPostBlog = () => {
                       />
                     )}
                   </div>
-                  <div className="flex flex-col">
+                  <div className="lg:w-1/4 flex flex-col">
                     <h1 className="font-bold text-lg my-5">
                       {post.title && post.title.rendered}
                     </h1>
@@ -75,7 +75,7 @@ const LatestPostBlog = () => {
         </div>
       </div>
       {latestPost && (
-        <div className="lg:mx-4 lg:my-10">
+        <div className="lg:w-1/3 lg:mx-4 lg:my-10">
           <div className="m-10">
             <h2 className="text-3xl my-5 font-bold text-left">
               {latestPost.title.rendered}

@@ -47,7 +47,7 @@ export default function App() {
       </Helmet>
 
       <Navbar />
-      {/* <MaterialTailwind /> */}
+      <MaterialTailwind />
 
       <FrontMain data={data} />
 
