@@ -11,17 +11,17 @@ export default function FinancialAdvisor({ data }) {
 
             <div
               style={{ backgroundColor: "#F0F0F0" }}
-              className="lg:w-1/2 lg:p-20 md:p-20 "
+              className=" lg:w-1/2 lg:p-20 md:p-20 "
             >
               <img
                 src={data.acf.financesectionleftimg}
                 alt=""
                 className="w-36 "
-                width="100%"
+                width="10%"
                 height="200px"
               />
 
-              <h1 className="mx-10 font-semibold text-4xl w-96 py-6 ">
+              <h1 className="lg:mx-10 font-semibold text-4xl w-96 py-6 ">
                 {data.acf.financetitle}
               </h1>
               <p className="w-96 pb-5">{data.acf.financebodyleft}</p>
@@ -35,7 +35,7 @@ export default function FinancialAdvisor({ data }) {
                 src={data.acf.financesectionlrightmg}
                 alt=""
                 className="w-36 "
-                width="100%"
+                width="50%"
                 height="200px"
               />
 
@@ -52,7 +52,7 @@ export default function FinancialAdvisor({ data }) {
             {/* second section */}
 
             <div className="flex flex-col md:flex-row lg:flex-row justify-evenly  md:my-10  ">
-              <div className="flex flex-col  items-center  m-2">
+              <div className="flex flex-col  items-center ">
                 <img
                   src={data.acf.dollar100finance}
                   alt=""

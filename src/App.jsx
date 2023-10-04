@@ -57,7 +57,7 @@ export default function App() {
       {/* <Blog data={data} /> */}
       <LatestPostBLog />
       <FinancialAdvisor data={data} />
-      <SliderWithText data={data} />
+      {/* <SliderWithText data={data} /> */}
 
       <AskedQuestions data={data} />
       <EndHomePage data={data} />

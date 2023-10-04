@@ -23,8 +23,6 @@ export function MaterialTailwind() {
     <Carousel
       className="rounded-xl"
       onChange={(index) => setCurrentPostIndex(index)}
-      loop="true"
-      autoplay="true"
     >
       {posts.map((post) => (
         <div key={post.id} className="carousel-slide w-full flex flex-row">
@@ -52,7 +50,7 @@ export function MaterialTailwind() {
                 </Typography>
                 <div className="flex justify-center gap-2">
                   <Button size="lg" color="white">
-                    Read More
+                    Explore{" "}
                   </Button>
                   <Button size="lg" color="white" variant="text">
                     Gallery

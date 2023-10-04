@@ -28,7 +28,7 @@ const LatestPostBlog = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center lg:flex-row lg:px-4">
+    <div className="mt-10 flex flex-col items-center justify-center lg:flex-row lg:px-4">
       <div className="flex flex-col items-start justify-left">
         <h2 className="text-3xl font-bold">Latest Blogs</h2>
         <div className="bg-blue-200">
@@ -50,7 +50,7 @@ const LatestPostBlog = () => {
             {otherPosts.length > 0 &&
               otherPosts.slice(1, 4).map((post, index) => (
                 <div
-                  className="flex flex-col mx-10 w-full items-center justify-center my-4"
+                  className="flex flex-col w-full items-center justify-center my-4"
                   key={post.index}
                 >
                   <div className="w-full">
