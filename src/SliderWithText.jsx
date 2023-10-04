@@ -39,7 +39,7 @@ export default function SliderWithText() {
       <div className="flex flex-row justify-center items-center my-10">
         <div
           style={{ backgroundColor: "#FAFBFC" }}
-          className="w-1/2 flex flex-col lg:flex-row justify-center  items-center text-center "
+          className="lg:w-1/2 flex flex-col lg:flex-row justify-center  items-center text-center "
         >
           <div className="  justify-center items-center my-10 mx-10">
             <ul>

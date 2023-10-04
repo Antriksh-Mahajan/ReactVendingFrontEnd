@@ -1,10 +1,15 @@
 import { React } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Helmet } from "react-helmet";
 
 export default function FrontMain({ data }) {
   return (
     <div>
+      <Helmet>
+        <title>Front Main</title>
+        <meta name="Front Main" content="Main website details as shown" />
+      </Helmet>
       {data.map((data, index) => (
         <div
           style={{ backgroundColor: "#181818" }}
@@ -14,13 +19,13 @@ export default function FrontMain({ data }) {
           <div className="flex flex-col w-full md:flex md:flex-row justify-center align-center">
             <div className="lg:w-1/3">
               <div className="flex flex-col justify-center">
-                <h1 className="text-white bg-graycolor italic py-2 w-60 mx-3 px-3 my-5">
+                <h1 className="text-white bg-graycolor uppercase italic py-2 w-64 mx-3 px-3 my-5">
                   {data.acf.heading}
                 </h1>
 
-                <h1 className="lg:w-full text-white text-4xl md:w-full font-bold mx-4 lg:mx-auto">
-                  Your Smart
-                  <span className="text-greencolor">factory direct</span>
+                <h1 className="lg:w-full text-white tracking-wide	  text-4xl md:w-full font-bold mx-4 lg:mx-auto">
+                  Your Smart,
+                  <span style={{ color: "#c7ff4e" }}> factory direct </span>
                   Vending Machine Supplier .
                 </h1>
 
@@ -103,7 +108,7 @@ export default function FrontMain({ data }) {
                       height="440px"
                     />
                   </div>
-                  <div>
+                  <div className="py-10">
                     <img
                       src={data.acf.carouselimg3}
                       alt="Description for Carousel Image 3"

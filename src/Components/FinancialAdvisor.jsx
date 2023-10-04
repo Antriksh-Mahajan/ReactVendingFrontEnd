@@ -21,7 +21,7 @@ export default function FinancialAdvisor({ data }) {
                 height="200px"
               />
 
-              <h1 className="font-semibold text-4xl w-96 py-6 ">
+              <h1 className="mx-10 font-semibold text-4xl w-96 py-6 ">
                 {data.acf.financetitle}
               </h1>
               <p className="w-96 pb-5">{data.acf.financebodyleft}</p>
@@ -59,7 +59,9 @@ export default function FinancialAdvisor({ data }) {
                   width="50%"
                   height="200px"
                 />
-                <h2 className="m-2 font-bold">{data.acf.text100finance}</h2>
+                <h2 className="m-2 font-bold tracking-widest	">
+                  {data.acf.text100finance}
+                </h2>
               </div>
               <div className="flex flex-col  items-center m-2 ">
                 <img

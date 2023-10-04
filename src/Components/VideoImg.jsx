@@ -4,7 +4,7 @@ export default function VideoImg({ data }) {
   return (
     <div>
       {data.map((data) => (
-        <section class="h-100">
+        <section class="">
           <div class="relative">
             <div class=" ">
               <a href="https://vimeo.com/413637467">
@@ -13,7 +13,7 @@ export default function VideoImg({ data }) {
                   src={data.acf.belowimage}
                   alt=""
                   class="w-full h-auto brightness-50"
-                  style={{ objectFit: "cover", width: "100%", height: "500px" }}
+                  style={{ objectFit: "cover", width: "100%", height: "550px" }}
                 />
                 {""}{" "}
               </a>
@@ -31,20 +31,11 @@ export default function VideoImg({ data }) {
                 </div>
                 <div>
                   <h1 class="w-72 t-72  text-white text-4xl font-bold">
-                    {data.acf.buttontext
-                      .split("Custom Vending Machines")
-                      .map((part, index, array) =>
-                        index === array.length - 1 ? (
-                          part
-                        ) : (
-                          <span key={index}>
-                            {part}{" "}
-                            <span className="factory-direct text-greencolor">
-                              Custom Vending Machines
-                            </span>
-                          </span>
-                        )
-                      )}
+                    Your Source for Full-Line of
+                    <span style={{ color: "#c7ff4e" }}>
+                      {" "}
+                      Custom Vending Machines
+                    </span>
                   </h1>
                 </div>
               </div>

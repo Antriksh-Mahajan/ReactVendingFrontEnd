@@ -13,16 +13,16 @@ export default function Header() {
 
   return (
     <div>
-      <div className="lg:flex lg:flex-row justify-center  items-center lg:h-20 p-4">
+      <div className="lg:flex lg:flex-row justify-center  items-center lg:h-20 p-5">
         <div className="flex flex-row justify-between">
           <img
             src="https://mlnnx0p1ut8l.i.optimole.com/cb:g6-f.55611/w:auto/h:auto/q:mauto/ig:avif/https://www.vending.com/wp-content/uploads/2021/10/vending-logo-dark.svg"
             alt="SiteLogo"
-            width="100%"
-            height="20px"
+            width="300px"
+            height="68px"
           />
-          <div className="lg:hidden flex items-center justify-end bg-white">
-            <button onClick={toggleMenu} className=" py-1 rounded-full ">
+          <div className="lg:hidden flex flex-row items-center justify-center pl-5 bg-white">
+            <button onClick={toggleMenu} className="  rounded-full ">
               <img
                 src="https://assets.stickpng.com/images/588a6507d06f6719692a2d15.png"
                 alt=""

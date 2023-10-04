@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const PostAPI = () => {
   const [posts, setPosts] = useState([]);
+  const [currentPostIndex, setCurrentPostIndex] = useState(0);
 
   useEffect(() => {
     // Fetch WordPress posts using the REST API
-    fetch("https://jobadvisor.darpanchandigarh.in//wp-json/wp/v2/posts")
+    fetch(
+      "https://jobadvisor.darpanchandigarh.in/wp-json/wp/v2/posts?per_page=5&_embed"
+    )
       .then((response) => response.json())
       .then((data) => {
         setPosts(data);
@@ -16,23 +21,46 @@ const PostAPI = () => {
   }, []);
 
   return (
-    <div className="flex flex-col px-5">
-      {posts.map((post) => (
-        <div key={post.id}>
-          <h3
-            style={{ color: "#BED630" }}
-            className="w-68 text-2xl font-bold pb-2"
+    <div className="carousel-container">
+      <h1 className="text-4xl my-10 text-center">All Post</h1>
+
+      {posts.length > 0 && (
+        <div className="carousel-wrapper">
+          <Carousel
+            autoPlay={true}
+            interval={2000}
+            infiniteLoop={true}
+            showThumbs={false}
+            selectedItem={currentPostIndex}
+            onChange={(index) => setCurrentPostIndex(index)}
           >
-            {post.title.rendered}
-          </h3>
-          {/* <p className="w-90" style={{ color: "#C1CED9" }}>
-            {post.excerpt.rendered}
-          </p> */}
+            {posts.map((post) => (
+              <div
+                key={post.id}
+                className="carousel-slide w-full flex flex-row"
+              >
+                <div className=" w-80 h-96">
+                  <img
+                    src={post.acf.postimage}
+                    alt=""
+                    className=""
+                    width="100%"
+                  />
+                </div>
+
+                <div className="carousel-content ">
+                  <h3
+                    style={{ color: "#BED630" }}
+                    className="text-2xl font-bold"
+                  >
+                    {post.title.rendered}
+                  </h3>
+                </div>
+              </div>
+            ))}
+          </Carousel>
         </div>
-      ))}
-      <a href="https://yourwordpresssite.com" className="text-white">
-        View more
-      </a>
+      )}
     </div>
   );
 };

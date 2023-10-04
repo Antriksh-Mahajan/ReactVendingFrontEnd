@@ -5,13 +5,13 @@ export default function MiddlePartOfMain({ data }) {
   return (
     <div>
       {data.map((data) => (
-        <div className="w-full flex flex-row justify-center items-center p-6  ">
-          <div className="px-4  flex flex-col md:pt-5 ">
+        <div className="w-full flex flex-col lg:flex-row justify-center items-center p-6  ">
+          <div className="  flex flex-col md:pt-5 ">
             <h2 className="text-black md:w-72 font-bold text-xl font-romen">
               {data.acf.middleleft}
             </h2>
             <img
-              width="30% "
+              width="40% "
               height="10px"
               className="py-3 "
               src={data.acf.fivestar}

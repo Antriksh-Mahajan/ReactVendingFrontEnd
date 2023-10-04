@@ -16,6 +16,9 @@ import ReadMore from "./Components/ReadMore";
 import SliderWithText from "./SliderWithText";
 import PostAPI from "./Components/PostAPI";
 import ContactUs from "./Components/ContactUs";
+import LatestPostBLog from "./Components/LatestPostBLog";
+import { MaterialTailwind } from "./Components/MaterialTailwind";
+import { Helmet } from "react-helmet";
 
 export default function App() {
   const [data, setData] = useState([]);
@@ -38,13 +41,21 @@ export default function App() {
   <ReadMore data={data} />;
   return (
     <div>
+      <Helmet>
+        <title>Front Main</title>
+        <meta name="App.js" content="All files middlewear to website" />
+      </Helmet>
+
       <Navbar />
+      <MaterialTailwind />
 
       <FrontMain data={data} />
-      {/* <VideoURLPage data={data} /> */}
+
+      <VideoURLPage data={data} />
       <MiddlePartOfMain data={data} />
       <VideoImg data={data} />
-      <Blog data={data} />
+      {/* <Blog data={data} /> */}
+      <LatestPostBLog />
       <FinancialAdvisor data={data} />
       <SliderWithText data={data} />
 
