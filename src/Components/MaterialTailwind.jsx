@@ -31,6 +31,7 @@ export function MaterialTailwind() {
               src={post.acf.postimage}
               alt="image 1"
               className="h-full w-full object-cover"
+              loading="lazy"
             />
             <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
               <div className="w-3/4 text-center md:w-2/4">
