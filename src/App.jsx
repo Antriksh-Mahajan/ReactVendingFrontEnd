@@ -51,7 +51,7 @@ export default function App() {
 
       <FrontMain data={data} />
 
-      <VideoURLPage data={data} />
+      {/* <VideoURLPage data={data} /> */}
       <MiddlePartOfMain data={data} />
       <VideoImg data={data} />
       {/* <Blog data={data} /> */}
