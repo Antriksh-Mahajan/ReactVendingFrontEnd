@@ -24,7 +24,7 @@ export default function FrontMain({ data }) {
                 </h1>
 
                 <h1 className=" text-white text-4xl  font-bold ">
-                  Your Smart, factory direct Vending Machine Supplier .
+                  {data.acf.maintagline}
                 </h1>
 
                 <p className=" lg:w-full text-white p-5">
