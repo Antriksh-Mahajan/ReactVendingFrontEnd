@@ -23,9 +23,12 @@ export default function FrontMain({ data }) {
                   {data.acf.heading}
                 </h1>
 
-                <h1 className="lg:w-full text-white tracking-wide	  text-4xl md:w-full font-bold mx-4 lg:mx-auto">
+                <h1 className=" text-white text-4xl  font-bold ">
                   Your Smart,
-                  <span style={{ color: "#c7ff4e" }}> factory direct </span>
+                  <span style={{ color: "#c7ff4e" }}>
+                    {" "}
+                    factory direct{" "}
+                  </span>{" "}
                   Vending Machine Supplier .
                 </h1>
 
