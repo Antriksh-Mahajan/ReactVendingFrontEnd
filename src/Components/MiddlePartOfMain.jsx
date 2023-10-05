@@ -4,8 +4,11 @@ import ReadMore from "./ReadMore";
 export default function MiddlePartOfMain({ data }) {
   return (
     <div>
-      {data.map((data) => (
-        <div className="w-full flex flex-col lg:flex-row justify-center items-center p-6  ">
+      {data.map((data, index) => (
+        <div
+          key={index}
+          className="w-full flex flex-col lg:flex-row justify-center items-center p-6  "
+        >
           <div className="  flex flex-col md:pt-5 ">
             <h2 className="text-black md:w-72 font-bold text-xl font-romen">
               {data.acf.middleleft}

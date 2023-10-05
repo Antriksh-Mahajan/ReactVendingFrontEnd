@@ -29,13 +29,14 @@ const LatestPostBlog = () => {
 
   return (
     <div className="mt-10 flex flex-col items-center justify-center lg:flex-row lg:px-4">
-      <div className="lg:w-1/4 flex flex-col items-start justify-left">
-        <h2 className="text-3xl font-bold">Latest Blogs</h2>
-        <div className="">
+      <div className="lg:w-flex flex-col items-start justify-left">
+        <h2 className="text-3xl font-bold text-greencolor ">Latest Blogs</h2>
+        <div className="flex flex-row">
           {latestPost && (
-            <div className="flex flex-col">
-              <div className="">
+            <div className="flex flex-col ">
+              <div className="lg:mt-10 lg">
                 <img
+                  className="w-full lg:w-40"
                   src={latestPost.acf.postimage}
                   alt=""
                   width="100%"
@@ -44,16 +45,28 @@ const LatestPostBlog = () => {
               </div>
             </div>
           )}
+          <div className="flex items-center">
+            {latestPost && (
+              <div className=" lg:mx-4 lg:my-10">
+                <div className="m-10">
+                  <h2 className="text-3xl my-5 font-bold text-left">
+                    {latestPost.title.rendered}
+                  </h2>
+                  <h2 className=""> {latestPost.acf.postbody} </h2>
+                </div>
+              </div>
+            )}
+          </div>
         </div>
         <div className="py-2 flex items-center justify-between text-center flex-row lg:w-2/4">
           <div className="flex justify-between  items-center w-full">
             {otherPosts.length > 0 &&
-              otherPosts.slice(1, 4).map((post, index) => (
+              otherPosts.slice(0, 3).map((post, index) => (
                 <div
-                  className="flex flex-col w-full items-stretch justify-evenly  my-4"
-                  key={post.index}
+                  className="flex flex-col w-full items-center justify-center  my-4"
+                  key={index}
                 >
-                  <div className="w-full">
+                  <div className="w-20">
                     {post.acf && post.acf.postimage && (
                       <img
                         className="p-2"
@@ -74,16 +87,6 @@ const LatestPostBlog = () => {
           </div>
         </div>
       </div>
-      {latestPost && (
-        <div className="lg:w-1/3 lg:mx-4 lg:my-10">
-          <div className="m-10">
-            <h2 className="text-3xl my-5 font-bold text-left">
-              {latestPost.title.rendered}
-            </h2>
-            <h2 className="text-justify"> {latestPost.acf.postbody} </h2>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

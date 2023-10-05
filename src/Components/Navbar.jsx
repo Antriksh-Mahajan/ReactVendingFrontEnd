@@ -24,7 +24,7 @@ export default function Header() {
           <div className="lg:hidden flex flex-row items-center justify-center pl-5 bg-white">
             <button onClick={toggleMenu} className="  rounded-full ">
               <img
-                src="https://assets.stickpng.com/images/588a6507d06f6719692a2d15.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
                 alt=""
                 width="100%"
                 height="100px"

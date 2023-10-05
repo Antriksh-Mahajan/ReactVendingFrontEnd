@@ -4,8 +4,8 @@ import ReadMore from "./ReadMore";
 export default function FinancialAdvisor({ data }) {
   return (
     <div className="flex flex-col  w-full   mt-20 items-center justify-center">
-      {data.map((data) => (
-        <div>
+      {data.map((data, index) => (
+        <div key={index}>
           <div className="flex flex-col lg:flex-row ">
             {/* first section  */}
 
@@ -51,40 +51,40 @@ export default function FinancialAdvisor({ data }) {
           <div>
             {/* second section */}
 
-            <div className="flex flex-col md:flex-row lg:flex-row justify-evenly  md:my-10  ">
-              <div className="flex flex-col  items-center ">
+            <div className="flex flex-col md:flex-row lg:flex-row justify-evenly  md:my-10   ">
+              <div className="flex flex-row  items-center  m-4">
                 <img
                   src={data.acf.dollar100finance}
                   alt=""
-                  width="50%"
-                  height="200px"
+                  width="70px"
+                  height="70px"
                 />
                 <h2 className="m-2 font-bold tracking-widest	">
                   {data.acf.text100finance}
                 </h2>
               </div>
-              <div className="flex flex-col  items-center m-2 ">
+              <div className="flex flex-row  items-center m-4 ">
                 <img
                   src={data.acf.imgmade_in_usa}
                   alt=""
-                  width="50%"
-                  height="100px"
+                  width="70px"
+                  height="70px"
                 />
                 <h2 className="m-2 font-bold">{data.acf.usatext}</h2>
               </div>{" "}
-              <div className="flex flex-col  items-center m-2 ">
+              <div className="flex flex-row items-center m-4 ">
                 <img
                   src={data.acf.heartprofitableimg}
                   alt=""
-                  width="25%"
-                  height="200px"
+                  width="70px"
+                  height="70px"
                 />
                 <h2 className="m-2 font-bold w-40 te">
                   {data.acf.profitable_text}
                 </h2>
               </div>{" "}
-              <div className="flex flex-col  items-center m-2">
-                <img src={data.acf.tickimg} alt="" width="25%" height="100px" />
+              <div className="flex flex-row  items-cente m-4">
+                <img src={data.acf.tickimg} alt="" width="70px" height="70px" />
                 <h2 className="m-2 font-bold">{data.acf.ticktext}</h2>
               </div>
             </div>
