@@ -52,17 +52,17 @@ export default function App() {
       <FrontMain data={data} />
 
       {/* <VideoURLPage data={data} /> */}
-      <MiddlePartOfMain data={data} />
-      <VideoImg data={data} />
+      {/* <MiddlePartOfMain data={data} /> */}
+      {/* <VideoImg data={data} /> */}
       {/* <Blog data={data} /> */}
-      <LatestPostBLog />
-      <FinancialAdvisor data={data} />
+      {/* <LatestPostBLog /> */}
+      {/* <FinancialAdvisor data={data} /> */}
       {/* <SliderWithText data={data} /> */}
 
-      <AskedQuestions data={data} />
-      <EndHomePage data={data} />
-      <ContactUs />
-      <Footer />
+      {/* <AskedQuestions data={data} /> */}
+      {/* <EndHomePage data={data} /> */}
+      {/* <ContactUs /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
