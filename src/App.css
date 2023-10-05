@@ -54,3 +54,7 @@ img {
   max-width: 100%; /* Set the maximum width to the container width */
   height: auto; /* Maintain aspect ratio */
 }
+
+.carouselH {
+  width: "400px";
+}

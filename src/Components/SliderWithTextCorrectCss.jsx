@@ -6,7 +6,7 @@ export default function SliderWithTextCorrectCss({ Postdata }) {
   const [selectedItem, setSelectedItem] = useState(0); // Default to the first item
 
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col lg:flex-row items-center justify-center">
       <div className=" flex items-center  justify-center m-5 ">
         <ul>
           <h1
@@ -36,11 +36,14 @@ export default function SliderWithTextCorrectCss({ Postdata }) {
         showThumbs={false}
         showArrows={true}
         infiniteLoop={true}
-        className=" justify-center flex"
-        width={400}
+        className=" justify-center flex "
+        width={300}
       >
         {Postdata.map((item, index) => (
-          <div key={index} className="flex flex-col lg:flex-row items-center ">
+          <div
+            key={index}
+            className="flex flex-col lg:flex-row items-center justify-center"
+          >
             <div className="mt-5">
               {item.acf && (
                 <img
