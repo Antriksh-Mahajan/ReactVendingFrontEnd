@@ -13,24 +13,38 @@ export default function FrontMain({ data }) {
       {data.map((data, index) => (
         <div
           style={{ backgroundColor: "#181818" }}
-          className="h-100 md:h-100 flex align-center justify-center relative pt-4"
+          className="h-100 md:h-100 flex align-center justify-center p-6 pt-4"
           key={index}
         >
-          <div className="flex flex-col w-full md:flex md:flex-row justify-center align-center">
+          <div className="flex flex-col w-full md:flex md:flex-row justify-center align-center lg:gap-40">
             <div className="lg:w-1/3">
               <div className="flex flex-col justify-center">
-                <h1 className="text-white bg-graycolor uppercase italic py-2 w-64 mx-3 px-3 my-5">
+                <h1 className="text-white bg-graycolor uppercase italic py-2 w-64 mx-3 px-3 my-3">
                   {data.acf.heading}
                 </h1>
 
-                <h1 className=" text-white text-4xl  font-bold ">
-                  {data.acf.maintagline}
+                <h1 className="text-4xl font-bold px-5 ">
+                  {data.acf.maintagline.includes("factory direct") ? (
+                    <>
+                      <span className="text-white">
+                        {data.acf.maintagline.split("factory direct")[0]}
+                      </span>
+                      <span className="text-lightgreencolor">
+                        factory direct
+                      </span>
+                      <span className="text-white">
+                        {data.acf.maintagline.split("factory direct")[1]}
+                      </span>
+                    </>
+                  ) : (
+                    <span className="text-white">{data.acf.maintagline}</span>
+                  )}
                 </h1>
 
                 <p className=" lg:w-full text-white p-5">
                   {data.acf.maintagbody}
                 </p>
-                <div className="flex flex-row px-5 lg:justify-start">
+                <div className="flex flex-row px-5 pb-5  lg:justify-start">
                   <button
                     style={{ backgroundColor: "#BDD52F" }}
                     className="rounded-3xl text-black py-2 px-3 w-40 flex items-center justify-center font-bold"
@@ -38,7 +52,7 @@ export default function FrontMain({ data }) {
                     {data.acf.frontbtn}
                   </button>
                 </div>
-                <div className="flex px-5 items-center py-5 lg:items-start">
+                <div className="flex px-5 items-center  lg:items-start ">
                   <div className="flex flex-col items-center">
                     <img
                       className="w-16 mx-5"
@@ -47,7 +61,7 @@ export default function FrontMain({ data }) {
                       width="64px"
                       height="64px"
                     />
-                    <h3 className="text-white px-5 text-center">
+                    <h3 className="text-white px-5 lg:w-40 text-center">
                       {data.acf.firststicekertext}
                     </h3>
                   </div>
@@ -60,7 +74,7 @@ export default function FrontMain({ data }) {
                       width="64px"
                       height="64px"
                     />
-                    <h3 className="text-white px-5 ">
+                    <h3 className="text-white px-5 lg:w-40 text-center mt-2">
                       {data.acf.secondstickertext}
                     </h3>
                   </div>
@@ -73,7 +87,7 @@ export default function FrontMain({ data }) {
                       width="64px"
                       height="64px"
                     />
-                    <h3 className="text-white px-5 ">
+                    <h3 className="text-white px-5 w-32 text-center">
                       {data.acf.thirdstickertext}
                     </h3>
                   </div>

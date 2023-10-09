@@ -13,21 +13,21 @@ export default function Header() {
 
   return (
     <div>
-      <div className="lg:flex lg:flex-row justify-center  items-center lg:h-20 p-5">
-        <div className="flex flex-row justify-between">
+      <div className="lg:flex lg:flex-row justify-center items-center lg:h-20 p-5">
+        <div className="flex flex-row justify-between ">
           <img
             src="https://mlnnx0p1ut8l.i.optimole.com/cb:g6-f.55611/w:auto/h:auto/q:mauto/ig:avif/https://www.vending.com/wp-content/uploads/2021/10/vending-logo-dark.svg"
             alt="SiteLogo"
             width="300px"
             height="68px"
           />
-          <div className="lg:hidden flex flex-row items-center justify-center pl-5 bg-white">
+          <div className="md:w-16 lg:hidden flex flex-row items-center justify-center pl-5 bg-white">
             <button onClick={toggleMenu} className="  rounded-full ">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
                 alt=""
                 width="100%"
-                height="100px"
+                height="10px"
               />
             </button>
           </div>

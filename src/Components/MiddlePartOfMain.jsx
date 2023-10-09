@@ -7,7 +7,7 @@ export default function MiddlePartOfMain({ data }) {
       {data.map((data, index) => (
         <div
           key={index}
-          className="w-full flex flex-col lg:flex-row justify-center items-center p-6  "
+          className="px-5 w-full flex flex-col lg:flex-row justify-center items-center lg:py-10 lg:gap-40   "
         >
           <div className="  flex flex-col md:pt-5 ">
             <h2 className="text-black md:w-72 font-bold text-xl font-romen">
@@ -23,9 +23,9 @@ export default function MiddlePartOfMain({ data }) {
             <ReadMore />
           </div>
 
-          <div className=" flex flex-col items-center justify-center md:w-1/3">
-            <div>
-              <h2 className="text-xl">{data.acf.righmiddletbody}</h2>
+          <div className="w-full lg:w-1/3 flex  flex-col items-center justify-center  ">
+            <div className="">
+              <h2 className="text-xl  urbanist">{data.acf.righmiddletbody}</h2>
             </div>
             <div className="flex  flex-col  lg:flex-row justify-between mt-7">
               <img

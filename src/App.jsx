@@ -1,4 +1,6 @@
 import { React, useEffect, useState } from "react";
+import "./App.css";
+
 import FrontMain from "./Components/FrontMain";
 import axios from "axios";
 import VideoURLPage from "./Components/VideoURLPage";
@@ -62,16 +64,17 @@ export default function App() {
 
       <FrontMain data={Pagedata} />
 
-      {/* <VideoURLPage data={data} /> */}
+      <VideoURLPage data={Pagedata} />
       <MiddlePartOfMain data={Pagedata} />
-      <VideoImg data={Pagedata} />
       <LatestPostBLog />
+
+      <VideoImg data={Pagedata} />
       <FinancialAdvisor data={Pagedata} />
       <SliderWithTextCorrectCss Postdata={Postdata} />
       <AskedQuestions data={Pagedata} />
       {/* <EndHomePage data={data} /> */}
       {/* <ContactUs /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

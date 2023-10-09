@@ -12,14 +12,14 @@ export default function VideoImg({ data }) {
                 <img
                   src={data.acf.belowimage}
                   alt=""
-                  className="w-full h-auto brightness-50"
+                  className="w-full h-auto brightness-50 relative"
                   style={{ objectFit: "cover", width: "100%", height: "550px" }}
                 />
                 {""}{" "}
               </a>
             </div>
 
-            <div className="h-fit absolute inset-1 flex flex-col lg:flex-row-reverse md:flex-row justify-evenly items-center text-center lg:text-left top-44">
+            <div className="h-fit absolute inset-1 flex flex-col  justify-evenly items-center text-center lg:text-left top-48">
               <div className="flex flex-col   w-full justify-evenly items-center md:flex-row lg:flex-row  ">
                 <div className=" ">
                   <img
@@ -29,8 +29,8 @@ export default function VideoImg({ data }) {
                     height="80px"
                   />
                 </div>
-                <div>
-                  <h1 className="w-72 t-72  text-white text-4xl font-bold">
+                <div className="lg:absolute left-96 ">
+                  <h1 className="w-72 text-white text-4xl font-bold leading-normal">
                     Your Source for Full-Line of
                     <span style={{ color: "#c7ff4e" }}>
                       {" "}
